@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="easypay_widget_text_foreground">#ffffff</color>
+    <color name="easypay_widget_text_foreground_error">#b3261e</color>
+    <color name="easypay_widget_text_secondary">#f2f2f2</color>
+    <color name="easypay_widget_text_action">#D4E3F9</color>
+
+    <color name="easypay_widget_sheet_background">#252525</color>
+
+    <color name="easypay_widget_field_hint_foreground">#f2f2f2</color>
+    <color name="easypay_widget_field_background">#535353</color>
+    <color name="easypay_widget_field_background_error">#fff2f1</color>
+    <color name="easypay_widget_field_stroke_focused">#a8a8a8</color>
+    <color name="easypay_widget_field_error_text_on_surface">#D9928E</color>
+
+    <color name="easypay_widget_checkbox">#2873E0</color>
+    <color name="easypay_widget_checkbox_selected">#1752C0</color>
+    <color name="easypay_widget_checkbox_unselected">#f2f2f2</color>
+    <color name="easypay_widget_checkbox_text">#f2f2f2</color>
+
+    <color name="easypay_widget_button_action_background">#2AC78C</color>
+    <color name="easypay_widget_button_action_background_disabled">#6c6c6c</color>
+    <color name="easypay_widget_button_action_background_error">#FFF2F1</color>
+    <color name="easypay_widget_button_action_foreground">#ffffff</color>
+    <color name="easypay_widget_button_action_foreground_disabled">#e1e1e1</color>
+    <color name="easypay_widget_button_action_foreground_error">#B3261E</color>
+
+    <color name="easypay_widget_payment_method_item_background">#252525</color>
+    <color name="easypay_widget_payment_method_item_background_selected">#D4E3F9</color>
+    <color name="easypay_widget_payment_method_item_border">#A8A8A8</color>
+    <color name="easypay_widget_payment_method_item_border_selected">#2873E0</color>
+    <color name="easypay_widget_payment_method_item_text">#FFFFFF</color>
+    <color name="easypay_widget_payment_method_item_text_selected">#000000</color>
+
+    <color name="easypay_widget_popup_sheet_background">#535353</color>
+    <color name="easypay_widget_popup_button_primary_background">#ffffff</color>
+    <color name="easypay_widget_popup_button_primary_foreground">#000000</color>
+    <color name="easypay_widget_popup_button_secondary_background">@android:color/transparent</color>
+    <color name="easypay_widget_popup_button_secondary_foreground">#ffffff</color>
+    <color name="easypay_widget_popup_button_secondary_border">#ffffff</color>
+
+    <color name="easypay_widget_snackbar_background_success">#D6F4DE</color>
+    <color name="easypay_widget_snackbar_background_failure">#FFF2F1</color>
+    <color name="easypay_widget_snackbar_text">#000000</color>
+</resources>

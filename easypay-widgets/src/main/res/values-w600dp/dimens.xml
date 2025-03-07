@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Add new card -->
+    <dimen name="easypay_add_new_card_information_margin_top">32dp</dimen>
+</resources>

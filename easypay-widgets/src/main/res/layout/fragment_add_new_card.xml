@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:id="@+id/bottom_sheet"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/easypay_widget_sheet_background"
+        android:fillViewport="true"
+        android:overScrollMode="never"
+        app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:paddingHorizontal="20dp">
+
+            <include
+                android:id="@+id/new_card_header"
+                layout="@layout/layout_new_card_header"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintWidth_max="@dimen/easypay_add_new_card_max_width" />
+
+            <include
+                android:id="@+id/section_card_information"
+                layout="@layout/layout_card_information_section"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/easypay_add_new_card_information_margin_top"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/new_card_header"
+                app:layout_constraintWidth_max="@dimen/easypay_add_new_card_max_width" />
+
+            <include
+                android:id="@+id/section_billing_address"
+                layout="@layout/layout_billing_address_section"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/section_card_information"
+                app:layout_constraintWidth_max="@dimen/easypay_add_new_card_max_width" />
+
+            <include
+                android:id="@+id/section_bottom"
+                layout="@layout/layout_payment_sheet_bottom_section"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/section_billing_address"
+                app:layout_constraintWidth_max="@dimen/easypay_add_new_card_max_width" />
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/progress_view"
+                android:layout_width="@dimen/easypay_lottie_progress_view_size"
+                android:layout_height="@dimen/easypay_lottie_progress_view_size"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:lottie_autoPlay="true"
+                app:lottie_fileName="lottie_loading.json"
+                app:lottie_loop="true" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

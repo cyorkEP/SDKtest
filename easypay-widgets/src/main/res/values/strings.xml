@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="card_number">Card number</string>
+    <string name="card_information">Card information</string>
+    <string name="card_holder_name">Card holder name</string>
+    <string name="expiry_month_and_year">MM/YY</string>
+    <string name="cvc">CVC</string>
+    <string name="billing_address">Billing address</string>
+    <string name="street_address">Address</string>
+    <string name="zip">ZIP</string>
+    <string name="close_new_card_sheet">Close new card sheet</string>
+    <string name="close_manage_cards_sheet">Close manage cards widget</string>
+    <string name="new_card">New Card</string>
+    <string name="save_this_card">Save this card for future payments</string>
+    <string name="process_payment_general_error">Oops, we\'re experiencing some technical difficulties at the moment. Please try again later.</string>
+    <string name="process_payment_declined_error">We are unable to process your payment. Please contact your financial institution or use another card.</string>
+    <string name="unable_to_save_your_card">We are unable to save your card details. Please contact your financial institution or use another card.</string>
+    <string name="pay_format">Pay %s</string>
+    <string name="select_payment_method">Select payment method</string>
+    <string name="delete_this_card_link"><u>Delete this card</u></string>
+    <string name="delete_this_card">Delete this card</string>
+    <string name="selected_card">Selected card</string>
+    <string name="hidden_card_format">**** %s</string>
+    <string name="create_new_card">New card</string>
+    <string name="complete_all_fields_to_save">Complete all fields to save the card</string>
+    <string name="complete_all_fields_to_pay">Complete all fields to pay</string>
+    <string name="save_card">Save card</string>
+    <string name="your_cards">Your cards</string>
+    <string name="delete">Delete</string>
+    <string name="cancel">Cancel</string>
+    <string name="delete_card_success_message">The selected credit card has been deleted.</string>
+    <string name="delete_card_failure_message">We are unable to delete the selected card.</string>
+    <string name="delete_this_card_confirmation">Are you sure you want to delete the selected credit card? If you confirm, it will be permanently deleted. Don\'t worry, you can always add a new one later.</string>
+    <string name="you_have_reached_characters_limit">You\'ve reached the %d characters limit.</string>
+    <string name="card_was_saved">The card was saved.</string>
+    <string name="card_expired">Card expired.</string>
+
+    <string name="invalid_card_number">Invalid card number.</string>
+    <string name="invalid_card_holder_name_regex" tools:ignore="TypographyDashes">Invalid card holder name. Please ensure your input includes only the following valid characters: space A-z 0-9 \' . &amp; , ? / –</string>
+    <string name="invalid_address_regex" tools:ignore="TypographyDashes">Invalid address. Please ensure your input includes only the following valid characters: space A-z 0-9 \' . # _  , / –</string>
+    <string name="invalid_zip_regex" tools:ignore="TypographyDashes">Invalid ZIP code. Please ensure your input includes only the following valid characters: space A-z 0-9 –</string>
+    <string name="invalid_expiry_date">Invalid format.</string>
+    <string name="invalid_cvc">Invalid CVC number.</string>
+    <string name="invalid_characters">Invalid characters. Please check and enter again.</string>
+
+    <!-- API Errors -->
+    <string name="api_error_invalid_credit_card_data">The credit card data you entered is invalid. Please try again.</string>
+
+    <!-- Regex Patterns -->
+    <string name="regex_card_holder_name" tools:ignore="TypographyDashes">^[A-Za-z0-9 \'.,&amp;?/-]*$</string>
+    <string name="regex_street_address" tools:ignore="TypographyDashes">^[a-zA-Z0-9\-\.\,#_/\'\s ]*$</string>
+    <string name="regex_zip" tools:ignore="TypographyDashes">^[a-zA-Z0-9- ]*$</string>
+</resources>

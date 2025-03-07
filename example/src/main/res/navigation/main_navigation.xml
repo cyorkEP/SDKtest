@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_navigation"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.easypay_sample.ui.MainFragment"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_main" >
+        <action
+            android:id="@+id/action_mainFragment_to_consentAnnualFragment"
+            app:destination="@id/consentAnnualFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_chargeCardFragment"
+            app:destination="@id/chargeCardFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_paymentSheetFragment"
+            app:destination="@id/paymentSheetFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_customerSheetFragment"
+            app:destination="@id/customerSheetFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/chargeCardFragment"
+        android:name="com.easypay_sample.ui.charge_card.ChargeCardFragment"
+        android:label="fragment_charge_card"
+        tools:layout="@layout/fragment_charge_card" >
+        <argument
+            android:name="isPrefilled"
+            app:argType="boolean"
+            android:defaultValue="false" />
+    </fragment>
+    <fragment
+        android:id="@+id/consentAnnualFragment"
+        android:name="com.easypay_sample.ui.consent_annual.ConsentAnnualFragment"
+        android:label="fragment_consent_annual"
+        tools:layout="@layout/fragment_consent_annual" >
+        <action
+            android:id="@+id/action_consentAnnualFragment_to_addAnnualConsentFragment"
+            app:destination="@id/addAnnualConsentFragment" />
+        <argument
+            android:name="isPrefilled"
+            app:argType="boolean"
+            android:defaultValue="false" />
+    </fragment>
+    <fragment
+        android:id="@+id/addAnnualConsentFragment"
+        android:name="com.easypay_sample.ui.consent_annual.add.AddAnnualConsentFragment"
+        android:label="fragment_add_annual_consent"
+        tools:layout="@layout/fragment_add_annual_consent" >
+        <argument
+            android:name="isPrefilled"
+            app:argType="boolean"
+            android:defaultValue="false" />
+    </fragment>
+    <fragment
+        android:id="@+id/paymentSheetFragment"
+        android:name="com.easypay_sample.ui.payment_sheet.PaymentSheetFragment"
+        android:label="fragment_payment_sheet"
+        tools:layout="@layout/fragment_payment_sheet" />
+    <fragment
+        android:id="@+id/customerSheetFragment"
+        android:name="com.easypay_sample.ui.customer_sheet.CustomerSheetFragment"
+        android:label="fragment_customer_sheet"
+        tools:layout="@layout/fragment_customer_sheet" />
+</navigation>

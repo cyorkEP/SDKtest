@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <import type="android.text.InputType" />
+
+        <variable
+            name="data"
+            type="com.easypay_sample.ui.charge_card.ChargeCardViewData" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/credit_card_details"
+                android:textSize="22sp" />
+
+            <com.easypay_sample.utils.AppEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:inputType="@{InputType.TYPE_CLASS_NUMBER}"
+                app:mainText="@={data.merchantId}"
+                app:title="@string/merchant_id" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/credit_card_number" />
+
+            <com.easypaysolutions.utils.secured.SecureTextField
+                android:id="@+id/stf_card_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:imeOptions="actionNext" />
+
+            <com.easypay_sample.utils.AppEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:inputType="@{InputType.TYPE_CLASS_NUMBER}"
+                app:mainText="@={data.expMonth}"
+                app:title="@string/exp_month" />
+
+            <com.easypay_sample.utils.AppEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:inputType="@{InputType.TYPE_CLASS_NUMBER}"
+                app:mainText="@={data.expYear}"
+                app:title="@string/exp_year" />
+
+            <com.easypay_sample.utils.AppEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:mainText="@={data.cvv}"
+                app:title="@string/cvv" />
+        </LinearLayout>
+
+        <com.google.android.material.divider.MaterialDivider
+            android:layout_width="match_parent"
+            android:layout_height="2dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/account_holder"
+                android:textSize="22sp" />
+
+            <com.easypay_sample.utils.AppEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:mainText="@={data.holderFirstName}"
+                app:title="@string/first_name" />
+
+            <com.easypay_sample.utils.AppEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:mainText="@={data.holderLastName}"
+                app:title="@string/last_name" />
+
+            <com.easypay_sample.utils.AppEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:mainText="@={data.holderCompany}"
+                app:title="@string/company" />
+
+            <com.easypay_sample.utils.AppEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:mainText="@={data.holderPhone}"
+                app:title="@string/phone" />
+
+            <com.easypay_sample.utils.AppEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:mainText="@={data.holderEmail}"
+                app:title="@string/email" />
+        </LinearLayout>
+
+        <com.google.android.material.divider.MaterialDivider
+            android:layout_width="match_parent"
+            android:layout_height="2dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/billing_address"
+                android:textSize="22sp" />
+
+            <com.easypay_sample.utils.AppEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:mainText="@={data.holderAddress1}"
+                app:title="@string/address_1" />
+
+            <com.easypay_sample.utils.AppEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:mainText="@={data.holderAddress2}"
+                app:title="@string/address_2" />
+
+            <com.easypay_sample.utils.AppEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:mainText="@={data.holderCity}"
+                app:title="@string/city" />
+
+            <com.easypay_sample.utils.AppEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:mainText="@={data.holderState}"
+                app:title="@string/state" />
+
+            <com.easypay_sample.utils.AppEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:mainText="@={data.holderZip}"
+                app:title="@string/zip" />
+
+            <com.easypay_sample.utils.AppEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:mainText="@={data.holderCountry}"
+                app:title="@string/country" />
+        </LinearLayout>
+
+        <com.google.android.material.divider.MaterialDivider
+            android:layout_width="match_parent"
+            android:layout_height="2dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/end_customer"
+                android:textSize="22sp" />
+
+            <com.easypay_sample.utils.AppEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:mainText="@={data.customerFirstName}"
+                app:title="@string/first_name" />
+
+            <com.easypay_sample.utils.AppEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:mainText="@={data.customerLastName}"
+                app:title="@string/last_name" />
+
+            <com.easypay_sample.utils.AppEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:mainText="@={data.customerCompany}"
+                app:title="@string/company" />
+
+            <com.easypay_sample.utils.AppEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:mainText="@={data.customerPhone}"
+                app:title="@string/phone" />
+
+            <com.easypay_sample.utils.AppEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:mainText="@={data.customerEmail}"
+                app:title="@string/email" />
+        </LinearLayout>
+
+        <com.google.android.material.divider.MaterialDivider
+            android:layout_width="match_parent"
+            android:layout_height="2dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/end_customer_billing_address"
+                android:textSize="22sp" />
+
+            <com.easypay_sample.utils.AppEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:mainText="@={data.customerAddress1}"
+                app:title="@string/address_1" />
+
+            <com.easypay_sample.utils.AppEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:mainText="@={data.customerAddress2}"
+                app:title="@string/address_2" />
+
+            <com.easypay_sample.utils.AppEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:mainText="@={data.customerCity}"
+                app:title="@string/city" />
+
+            <com.easypay_sample.utils.AppEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:mainText="@={data.customerState}"
+                app:title="@string/state" />
+
+            <com.easypay_sample.utils.AppEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:mainText="@={data.customerZip}"
+                app:title="@string/zip" />
+
+            <com.easypay_sample.utils.AppEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:mainText="@={data.customerCountry}"
+                app:title="@string/country" />
+        </LinearLayout>
+
+        <com.google.android.material.divider.MaterialDivider
+            android:layout_width="match_parent"
+            android:layout_height="2dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/amounts"
+                android:textSize="22sp" />
+
+            <com.easypay_sample.utils.AppEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:inputType="@{InputType.TYPE_CLASS_NUMBER | InputType.TYPE_NUMBER_FLAG_DECIMAL}"
+                app:mainText="@={data.totalAmount}"
+                app:title="@string/total_amount" />
+
+            <com.easypay_sample.utils.AppEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:inputType="@{InputType.TYPE_CLASS_NUMBER | InputType.TYPE_NUMBER_FLAG_DECIMAL}"
+                app:mainText="@={data.salesAmount}"
+                app:title="@string/sales_amount" />
+
+            <com.easypay_sample.utils.AppEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:inputType="@{InputType.TYPE_CLASS_NUMBER | InputType.TYPE_NUMBER_FLAG_DECIMAL}"
+                app:mainText="@={data.surcharge}"
+                app:title="@string/surcharge" />
+        </LinearLayout>
+
+        <com.google.android.material.divider.MaterialDivider
+            android:layout_width="match_parent"
+            android:layout_height="2dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/purchase_items"
+                android:textSize="22sp" />
+
+            <com.easypay_sample.utils.AppEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:mainText="@={data.serviceDescription}"
+                app:title="@string/service_description" />
+
+            <com.easypay_sample.utils.AppEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:mainText="@={data.clientRefId}"
+                app:title="@string/client_ref_id" />
+
+            <com.easypay_sample.utils.AppEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:mainText="@={data.rpguid}"
+                app:title="@string/rpguid" />
+        </LinearLayout>
+    </LinearLayout>
+</layout>

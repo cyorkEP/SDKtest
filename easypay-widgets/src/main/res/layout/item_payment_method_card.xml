@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingEnd="8dp"
+    tools:ignore="RtlSymmetry">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/card_view"
+        android:layout_width="@dimen/easypay_payment_method_item_width"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_payment_method_card"
+        android:padding="@dimen/easypay_payment_method_item_padding"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/iv_top_left"
+            android:layout_width="@dimen/easypay_payment_method_image_size"
+            android:layout_height="@dimen/easypay_payment_method_image_size"
+            android:importantForAccessibility="no"
+            android:src="@drawable/ic_credit_card_filled_tint"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_label"
+            style="@style/Text.Body.3.SemiBold"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/easypay_payment_method_item_padding"
+            android:maxLines="1"
+            android:textColor="@color/easypay_widget_text_foreground"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/iv_top_left"
+            tools:text="**** 1234" />
+
+        <ImageView
+            android:id="@+id/iv_top_right"
+            android:layout_width="@dimen/easypay_payment_method_image_size"
+            android:layout_height="@dimen/easypay_payment_method_image_size"
+            android:importantForAccessibility="no"
+            android:src="@drawable/ic_check_circle_filled"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <Button
+        android:id="@+id/btn_action"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

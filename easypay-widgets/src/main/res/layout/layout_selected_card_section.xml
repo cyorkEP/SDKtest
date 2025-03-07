@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingHorizontal="@dimen/easypay_manage_cards_sheet_default_horizontal_padding"
+    tools:background="@color/easypay_widget_sheet_background">
+
+    <TextView
+        android:id="@+id/tv_title"
+        style="@style/Text.Body.3.SemiBold"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:paddingBottom="8dp"
+        android:text="@string/selected_card"
+        android:textColor="@color/easypay_widget_text_foreground"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_card_holder_name"
+        style="@style/Text.Body.2.Regular"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:drawablePadding="8dp"
+        android:textColor="@color/easypay_widget_text_secondary"
+        app:drawableStartCompat="@drawable/ic_user_filled_tint"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_title"
+        tools:text="John Doe" />
+
+    <TextView
+        android:id="@+id/tv_card_number"
+        style="@style/Text.Body.2.Regular"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:drawablePadding="8dp"
+        android:textColor="@color/easypay_widget_text_secondary"
+        app:drawableStartCompat="@drawable/ic_credit_card_filled_tint"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_card_holder_name"
+        tools:text="**** 1234" />
+
+    <TextView
+        android:id="@+id/btn_delete_card"
+        style="@style/Text.Body.3.SemiBold"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:text="@string/delete_this_card_link"
+        android:textColor="@color/easypay_widget_text_action"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_card_number" />
+
+    <TextView
+        android:id="@+id/tv_error"
+        style="@style/Text.Body.3.Regular.Error"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@id/btn_delete_card"
+        tools:text="@string/process_payment_declined_error"
+        tools:visibility="visible" />
+
+    <com.easypaysolutions.views.PrimaryButton
+        android:id="@+id/btn_complete"
+        style="@style/EasyPay.Default.Button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        app:layout_constraintTop_toBottomOf="@id/tv_error"
+        tools:text="Pay $999.75" />
+</androidx.constraintlayout.widget.ConstraintLayout>

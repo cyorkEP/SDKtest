@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <solid android:color="@color/easypay_widget_snackbar_background_failure" />
+    <corners android:radius="@dimen/easypay_snackbar_radius" />
+</shape>

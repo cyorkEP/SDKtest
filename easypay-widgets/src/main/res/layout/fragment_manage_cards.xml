@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <View
+        android:id="@+id/background"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@id/bottom_sheet"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/bottom_sheet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_manage_cards_sheet"
+        android:paddingBottom="40dp"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <include
+            android:id="@+id/layout_select_payment_method_section"
+            layout="@layout/layout_select_payment_method_section"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_max="@dimen/easypay_manage_cards_max_width" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_cards"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:clipToPadding="false"
+            android:orientation="horizontal"
+            android:overScrollMode="never"
+            android:paddingEnd="8dp"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:layout_constraintTop_toBottomOf="@id/layout_select_payment_method_section"
+            tools:ignore="RtlSymmetry"
+            tools:itemCount="3"
+            tools:listitem="@layout/item_payment_method_card" />
+
+        <include
+            android:id="@+id/layout_selected_card_section"
+            layout="@layout/layout_selected_card_section"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/rv_cards"
+            app:layout_constraintWidth_max="@dimen/easypay_manage_cards_max_width" />
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/progress_view"
+            android:layout_width="@dimen/easypay_lottie_progress_view_size"
+            android:layout_height="@dimen/easypay_lottie_progress_view_size"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:lottie_autoPlay="true"
+            app:lottie_fileName="lottie_loading.json"
+            app:lottie_loop="true" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

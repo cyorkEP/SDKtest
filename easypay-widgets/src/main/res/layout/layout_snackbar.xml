@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp"
+    tools:background="@drawable/bg_snackbar_success">
+
+    <TextView
+        android:id="@+id/tv_snackbar_title"
+        style="@style/Text.Body.3.Regular"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawablePadding="4dp"
+        android:gravity="center_vertical"
+        android:textColor="@color/easypay_widget_snackbar_text"
+        app:drawableStartCompat="@drawable/ic_check_circle_filled_green"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="@string/delete_card_success_message" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

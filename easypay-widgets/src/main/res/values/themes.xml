@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="EasyPay.Sheet.Base.Theme" parent="@style/Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowAnimationStyle">@null</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+    </style>
+
+    <style name="EasyPay.PaymentSheet.Default.Theme" parent="EasyPay.Sheet.Base.Theme" />
+
+    <style name="EasyPay.CustomerSheet.Default.Theme" parent="EasyPay.Sheet.Base.Theme" />
+
+    <style name="EasyPay.Base.EditText.Theme" parent="EasyPay.Sheet.Base.Theme">
+        <item name="colorControlNormal">@color/easypay_widget_text_foreground</item>
+        <item name="colorControlActivated">@color/easypay_widget_text_foreground</item>
+    </style>
+
+    <style name="EasyPay.Default.EditText.Theme" parent="EasyPay.Base.EditText.Theme" />
+
+    <style name="EasyPay.Base.Checkbox.Theme" parent="EasyPay.Sheet.Base.Theme">
+        <item name="colorPrimary">@color/easypay_widget_checkbox</item>
+    </style>
+
+    <style name="EasyPay.Default.Checkbox.Theme" parent="EasyPay.Base.Checkbox.Theme" />
+
+</resources>

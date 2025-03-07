@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <application>
+        <activity
+            android:name="com.easypaysolutions.payment_sheet.presentation.PaymentSheetActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:launchMode="singleInstance"
+            android:taskAffinity=""
+            android:theme="@style/EasyPay.PaymentSheet.Default.Theme"
+            android:windowSoftInputMode="adjustResize" />
+
+        <activity
+            android:name="com.easypaysolutions.customer_sheet.presentation.CustomerSheetActivity"
+            android:exported="false"
+            android:launchMode="singleInstance"
+            android:taskAffinity=""
+            android:screenOrientation="portrait"
+            android:theme="@style/EasyPay.CustomerSheet.Default.Theme"
+            android:windowSoftInputMode="adjustResize" />
+    </application>
+</manifest>

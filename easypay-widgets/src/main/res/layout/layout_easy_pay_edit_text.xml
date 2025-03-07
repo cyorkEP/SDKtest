@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:background="@color/easypay_widget_sheet_background">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til"
+        style="@style/EasyPay.Default.TextInputLayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/easypay_edit_text_field_height"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edit_text"
+            style="@style/EasyPay.Default.EditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/EasyPay.Base.EditText.Theme"
+            tools:hint="Card holder name" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/tv_error"
+        style="@style/Text.Error"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="@dimen/easypay_edit_text_horizontal_padding"
+        android:paddingTop="2dp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="@id/til"
+        app:layout_constraintStart_toStartOf="@id/til"
+        app:layout_constraintTop_toBottomOf="@id/til"
+        tools:text="Invalid characters."
+        tools:visibility="visible" />
+
+    <TextView
+        android:id="@+id/tv_info"
+        style="@style/Text.Supportive"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="@dimen/easypay_edit_text_horizontal_padding"
+        android:textColor="@color/easypay_widget_text_secondary"
+        android:paddingTop="2dp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="@id/til"
+        app:layout_constraintStart_toStartOf="@id/til"
+        app:layout_constraintTop_toBottomOf="@id/tv_error"
+        tools:text="You've reached the limit of 16 characters."
+        tools:visibility="visible" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

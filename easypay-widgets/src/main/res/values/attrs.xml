@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="EasyPayEditText">
+        <attr name="title" format="string" />
+        <attr name="uppercaseLabel" format="boolean" />
+        <attr name="maxLength" format="integer" />
+        <attr name="regex" format="string" />
+        <attr name="regexErrorMessage" format="string" />
+    </declare-styleable>
+</resources>

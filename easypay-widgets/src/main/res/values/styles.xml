@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Edit text -->
+
+    <style name="EasyPay.Base.TextInputLayout" parent="Widget.MaterialComponents.TextInputLayout.FilledBox.Dense">
+        <item name="boxStrokeWidth">0dp</item>
+        <item name="boxStrokeWidthFocused">0dp</item>
+        <item name="android:textColorHint">@color/easypay_widget_field_hint_foreground</item>
+        <item name="startIconTint">@color/easypay_widget_field_hint_foreground</item>
+        <item name="hintTextColor">@color/easypay_widget_field_hint_foreground</item>
+        <item name="hintTextAppearance">@style/TextAppearance.Supportive</item>
+        <item name="cursorColor">@color/easypay_widget_text_foreground</item>
+    </style>
+
+    <style name="EasyPay.Default.TextInputLayout" parent="EasyPay.Base.TextInputLayout" />
+
+    <style name="EasyPay.Base.EditText" parent="Widget.MaterialComponents.TextInputEditText.FilledBox">
+        <item name="android:paddingBottom">@dimen/easypay_edit_text_bottom_padding</item>
+        <item name="android:textAppearance">@style/TextAppearance.Body.2.Regular</item>
+        <item name="android:background">@drawable/selector_bg_edit_text</item>
+        <item name="android:textColor">@color/easypay_widget_text_foreground</item>
+        <item name="android:textCursorDrawable">@drawable/shape_cursor</item>
+        <item name="android:inputType">text</item>
+        <item name="android:textColorHighlight">@color/easypay_widget_text_action</item>
+        <item name="maxLines">1</item>
+    </style>
+
+    <style name="EasyPay.Default.EditText" parent="EasyPay.Base.EditText" />
+
+    <!-- Checkbox -->
+
+    <style name="EasyPay.Base.Checkbox" parent="Widget.Material3.CompoundButton.CheckBox">
+        <item name="buttonTint">@color/color_states_checkbox</item>
+        <item name="android:theme">@style/EasyPay.Base.Checkbox.Theme</item>
+        <item name="android:textColor">@color/easypay_widget_checkbox_text</item>
+        <item name="android:textAppearance">@style/TextAppearance.Body.3.Regular</item>
+    </style>
+
+    <style name="EasyPay.Default.Checkbox" parent="EasyPay.Base.Checkbox" />
+
+    <!-- Button - Action -->
+
+    <style name="EasyPay.Base.Button" parent="Widget.MaterialComponents.Button">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/color_states_btn_action_foreground</item>
+        <item name="android:backgroundTint">@color/color_states_btn_action_background</item>
+        <item name="android:textAppearance">@style/TextAppearance.Body.2.SemiBold</item>
+        <item name="android:paddingTop">@dimen/easypay_button_padding_vertical</item>
+        <item name="android:paddingBottom">@dimen/easypay_button_padding_vertical</item>
+        <item name="android:paddingStart">@dimen/easypay_button_padding_horizontal</item>
+        <item name="android:paddingEnd">@dimen/easypay_button_padding_horizontal</item>
+        <item name="cornerRadius">@dimen/easypay_button_radius</item>
+    </style>
+
+    <style name="EasyPay.Default.Button" parent="EasyPay.Base.Button" />
+
+    <!-- Button - Popup -->
+
+    <style name="EasyPay.Base.Button.Popup" parent="Widget.MaterialComponents.Button">
+        <item name="backgroundTint">@null</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textAppearance">@style/TextAppearance.Body.2.SemiBold</item>
+        <item name="android:paddingTop">@dimen/easypay_button_padding_vertical</item>
+        <item name="android:paddingBottom">@dimen/easypay_button_padding_vertical</item>
+        <item name="android:paddingStart">@dimen/easypay_button_padding_horizontal</item>
+        <item name="android:paddingEnd">@dimen/easypay_button_padding_horizontal</item>
+    </style>
+
+    <style name="EasyPay.Default.Button.Popup.Primary" parent="EasyPay.Base.Button.Popup">
+        <item name="android:textColor">@color/easypay_widget_popup_button_primary_foreground</item>
+        <item name="android:background">@drawable/bg_popup_button_primary</item>
+    </style>
+
+    <style name="EasyPay.Default.Button.Popup.Secondary" parent="EasyPay.Base.Button.Popup">
+        <item name="android:textColor">@color/easypay_widget_popup_button_secondary_foreground
+        </item>
+        <item name="android:background">@drawable/bg_popup_button_secondary</item>
+    </style>
+
+    <!-- Text -->
+
+    <style name="Text.Error" parent="Widget.MaterialComponents.TextView">
+        <item name="android:textAppearance">@style/TextAppearance.Supportive</item>
+        <item name="android:textColor">@color/easypay_widget_field_error_text_on_surface</item>
+    </style>
+
+    <style name="Text.Body" parent="Widget.MaterialComponents.TextView" />
+
+    <style name="Text.Body.1" parent="Text.Body">
+        <item name="android:textAppearance">@style/TextAppearance.Body.1</item>
+    </style>
+
+    <style name="Text.Body.1.SemiBold" parent="Text.Body.1">
+        <item name="android:textAppearance">@style/TextAppearance.Body.1.SemiBold</item>
+    </style>
+
+    <style name="Text.Body.2" parent="Text.Body">
+        <item name="android:textAppearance">@style/TextAppearance.Body.2</item>
+    </style>
+
+    <style name="Text.Body.2.Regular" parent="Text.Body.2">
+        <item name="android:textAppearance">@style/TextAppearance.Body.2.Regular</item>
+    </style>
+
+    <style name="Text.Body.2.SemiBold" parent="Text.Body.2">
+        <item name="android:textAppearance">@style/TextAppearance.Body.2.SemiBold</item>
+    </style>
+
+    <style name="Text.Body.3" parent="Text.Body">
+        <item name="android:textAppearance">@style/TextAppearance.Body.3</item>
+    </style>
+
+    <style name="Text.Body.3.Regular" parent="Text.Body.3">
+        <item name="android:textAppearance">@style/TextAppearance.Body.3.Regular</item>
+    </style>
+
+    <style name="Text.Body.3.Regular.Error" parent="Text.Body.3.Regular">
+        <item name="android:textColor">@color/easypay_widget_field_error_text_on_surface</item>
+    </style>
+
+    <style name="Text.Body.3.SemiBold" parent="Text.Body.3">
+        <item name="android:textAppearance">@style/TextAppearance.Body.3.SemiBold</item>
+    </style>
+
+    <style name="Text.Supportive" parent="Widget.MaterialComponents.TextView">
+        <item name="android:textAppearance">@style/TextAppearance.Supportive</item>
+    </style>
+
+    <!-- Text Appearance -->
+
+    <style name="TextAppearance" parent="Widget.MaterialComponents.TextView">
+        <item name="android:inputType">textNoSuggestions</item>
+    </style>
+
+    <!-- Text Appearance - Body -->
+
+    <style name="TextAppearance.Body.1" parent="TextAppearance">
+        <item name="android:textSize">18sp</item>
+        <item name="android:lineSpacingExtra">8sp</item>
+    </style>
+
+    <style name="TextAppearance.Body.1.SemiBold" parent="TextAppearance.Body.1">
+        <item name="android:fontFamily">@font/inter_semibold</item>
+    </style>
+
+    <style name="TextAppearance.Body.2" parent="TextAppearance">
+        <item name="android:textSize">16sp</item>
+        <item name="android:lineSpacingExtra">8sp</item>
+    </style>
+
+    <style name="TextAppearance.Body.2.Regular" parent="TextAppearance.Body.2">
+        <item name="android:fontFamily">@font/inter_regular</item>
+    </style>
+
+    <style name="TextAppearance.Body.2.SemiBold" parent="TextAppearance.Body.2">
+        <item name="android:fontFamily">@font/inter_semibold</item>
+    </style>
+
+    <style name="TextAppearance.Body.3" parent="TextAppearance">
+        <item name="android:textSize">14sp</item>
+        <item name="android:lineSpacingExtra">6sp</item>
+    </style>
+
+    <style name="TextAppearance.Body.3.Regular" parent="TextAppearance.Body.3">
+        <item name="android:fontFamily">@font/inter_regular</item>
+    </style>
+
+    <style name="TextAppearance.Body.3.SemiBold" parent="TextAppearance.Body.3">
+        <item name="android:fontFamily">@font/inter_semibold</item>
+    </style>
+
+    <!-- Text Appearance - Supportive -->
+
+    <style name="TextAppearance.Supportive" parent="TextAppearance">
+        <item name="android:fontFamily">@font/inter_regular</item>
+        <item name="android:textSize">11sp</item>
+        <item name="android:lineSpacingExtra">3sp</item>
+    </style>
+
+</resources>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- EasyPayEditText -->
+    <dimen name="easypay_edit_text_field_radius">4dp</dimen>
+    <dimen name="easypay_edit_text_bottom_padding">4dp</dimen>
+    <dimen name="easypay_edit_text_horizontal_padding">12dp</dimen>
+    <dimen name="easypay_edit_text_size">14sp</dimen>
+    <dimen name="easypay_edit_text_field_height">48dp</dimen>
+    <dimen name="easypay_edit_text_error_top_padding">2dp</dimen>
+    <dimen name="easypay_edit_text_error_padding">2dp</dimen>
+
+    <!-- Buttons -->
+    <dimen name="easypay_button_padding_horizontal">10dp</dimen>
+    <dimen name="easypay_button_padding_vertical">12dp</dimen>
+    <dimen name="easypay_button_radius">8dp</dimen>
+
+    <!-- Payment Method Item - Card-->
+    <dimen name="easypay_payment_method_item_width">124dp</dimen>
+    <dimen name="easypay_payment_method_item_padding">16dp</dimen>
+    <dimen name="easypay_payment_method_item_radius">8dp</dimen>
+    <dimen name="easypay_payment_method_image_size">24dp</dimen>
+
+    <!-- Manage Cards Sheet -->
+    <dimen name="easypay_manage_cards_sheet_default_horizontal_padding">16dp</dimen>
+    <dimen name="easypay_manage_cards_sheet_top_radius">16dp</dimen>
+    <dimen name="easypay_manage_cards_max_width">508dp</dimen>
+
+    <!-- Add new card -->
+    <dimen name="easypay_add_new_card_information_margin_top">16dp</dimen>
+    <dimen name="easypay_add_new_card_header_height">56dp</dimen>
+    <dimen name="easypay_add_new_card_max_width">600dp</dimen>
+
+    <!-- Snackbar -->
+    <dimen name="easypay_snackbar_radius">8dp</dimen>
+
+    <!-- Lottie Progress View -->
+    <dimen name="easypay_lottie_progress_view_size">64dp</dimen>
+</resources>

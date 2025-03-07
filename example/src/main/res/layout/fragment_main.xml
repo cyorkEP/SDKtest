@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context="com.easypay_sample.ui.MainFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/btn_prefilled_charge_card"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/charge_a_prefilled_credit_card_example" />
+
+        <Button
+            android:id="@+id/btn_charge_card"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/charge_a_credit_card_example" />
+
+        <com.google.android.material.divider.MaterialDivider
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="8dp" />
+
+        <Button
+            android:id="@+id/btn_prefilled_consent_annual"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/prefilled_consent_annual_example" />
+
+        <Button
+            android:id="@+id/btn_consent_annual"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/consent_annual_example" />
+
+        <com.google.android.material.divider.MaterialDivider
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="8dp" />
+
+        <Button
+            android:id="@+id/btn_payment_sheet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/payment_sheet_example" />
+
+        <Button
+            android:id="@+id/btn_customer_sheet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/customer_sheet_example" />
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <solid android:color="@color/easypay_widget_field_background_error" />
+    <stroke
+        android:width="1dp"
+        android:color="@color/easypay_widget_text_foreground_error" />
+    <corners android:radius="@dimen/easypay_edit_text_field_radius" />
+</shape>
