@@ -47,10 +47,10 @@ Add `easypay` to your dependencies in the `build.gradle` file.
 
 ```
 dependencies {
-    implementation 'com.easypay8:easypay:1.0.0'
+    implementation 'com.easypay1:easypay:1.0.0'
     
     // If you want to use widgets, add the following line
-    implementation 'com.easypay8:easypay-widgets:1.0.0'
+    implementation 'com.easypay1:easypay-widgets:1.0.0'
 }
 ```
 
@@ -91,8 +91,8 @@ secure way and process payments.
    method to handle the payment result.
 
 ```
-import com.easypay8.payment_sheet.PaymentSheet
-import com.easypay8.payment_sheet.utils.PaymentSheetResult
+import com.easypay1.payment_sheet.PaymentSheet
+import com.easypay1.payment_sheet.utils.PaymentSheetResult
 
 class PaymentSheetFragment : Fragment() {
     private lateinit var paymentSheet: PaymentSheet
@@ -121,8 +121,8 @@ class PaymentSheetFragment : Fragment() {
 
 ```
 // ...
-import com.easypay8.repositories.annual_consent.create.ConsentCreatorParam
-import com.easypay8.repositories.charge_cc.AmountsParam
+import com.easypay1.repositories.annual_consent.create.ConsentCreatorParam
+import com.easypay1.repositories.charge_cc.AmountsParam
 
 class PaymentSheetFragment : Fragment() {
     // ...
@@ -181,8 +181,8 @@ EasyPay's prebuilt UI component that lets your customers manage their saved cred
    method to handle the customer sheet result.
 
 ```
-import com.easypay8.customer_sheet.CustomerSheet
-import com.easypay8.customer_sheet.utils.CustomerSheetResult
+import com.easypay1.customer_sheet.CustomerSheet
+import com.easypay1.customer_sheet.utils.CustomerSheetResult
 
 class CustomerSheetFragment : Fragment() {
     private lateinit var customerSheet: CustomerSheet
@@ -210,7 +210,7 @@ class CustomerSheetFragment : Fragment() {
 
 ```
 // ...
-import com.easypay8.repositories.annual_consent.create.ConsentCreatorParam
+import com.easypay1.repositories.annual_consent.create.ConsentCreatorParam
 
 class CustomerSheetFragment : Fragment() {
     // ...
@@ -395,7 +395,7 @@ for credit card. It is a subclass of TextInputEditText which enables freedom of 
 SecureTextField supports only XML layout configuration:
 
 ```
-<com.easypay8.utils.secured.SecureTextField
+<com.easypay1.utils.secured.SecureTextField
     ... />
 ```
 
